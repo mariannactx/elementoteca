@@ -1,0 +1,35 @@
+body {margin: 0; padding: 0; width: 100%; height: 100%; font-family: Tahoma;}
+
+#slider{
+width: 100%;
+height: 500px;
+margin: 0;
+padding: 2.5% 0;
+position: relative;
+overflow: hidden;
+}
+
+	#left, #right { opacity: 0.2; top:31.6%; position:absolute; z-index: 3; trasition: opacity 1s;}
+	#left:hover, #right:hover { opacity: 0.5; trasition: opacity 1s;}
+    #left { left: 20px;}
+    #right { right: 20px;}
+	
+	#atual { left: 22.5%; }
+	.conteudo { 
+    width: 55%; 
+    height: 80%; 
+	margin: 1% 0;
+    position: absolute; 
+    left: 115%; 
+    transition: left 1s;
+    }
+		.descr { width: 67%; padding: 2.5%; position: absolute; left:0;}
+		.titulo { 
+			width: auto; 
+			background: #000; 
+			color: #ffec01; 
+			font-size: 2em; 
+			font-weight: bold; 
+			padding: 10px; 
+			display: inline;}
+		.img { max-height: 100%; right:0; position: absolute;}
